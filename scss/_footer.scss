@@ -1,12 +1,16 @@
-.footer__text {
-    font-size: $fuente-mid;
-}
+footer {
 
-.footer__icon {
-    color: $color-primario;
-    transition: all 0.3s; // Animacion del <icon> / link
-}
+    .footer__icon {
+        color: $color-primario;
+        transition: all 0.3s; // Animacion del <icon> / link
 
-.footer__icon:hover { // Elementos <i> del footer cuando el mouse se posicione sobreellos
-    color: $color-secundario;
+        &:hover { // Elementos <i> del footer cuando el mouse se posicione sobreellos
+            color: $color-secundario;
+        }
+
+    }
+    
+    .footer__text {
+        font-size: $fuente-mid;
+    }
 }
