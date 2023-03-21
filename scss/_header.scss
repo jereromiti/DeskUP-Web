@@ -13,10 +13,10 @@
 /*anclas Nav Bar (links)*/
 #nav__link {
     color: $color-primario;
-    font-size: $fuente-mid; /*tamano de la letra*/
-    transition: all 0.3s; /*animacion para ancla*/
+    font-size: $fuente-mid; // Size font
+    transition: all 0.3s; // Animacion del <a> / link
 }
 
-#nav__link:hover { /*Elementos <a> cuando el mouse esté posicionado sobreellos*/
+#nav__link:hover { // Elementos <a> cuando el mouse se posicione sobreellos
     color: $color-secundario;
 }
