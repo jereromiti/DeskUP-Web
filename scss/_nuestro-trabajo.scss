@@ -1,0 +1,8 @@
+.np__img {
+    transition: all 0.5s;
+  }
+  
+  .np__img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }

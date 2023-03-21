@@ -1,0 +1,22 @@
+.header {
+    z-index: 10;
+}
+
+.header__nav__row {
+    max-width: 78rem;
+}
+
+#nav__logo {
+  color: $color-primario;
+}
+
+/*anclas Nav Bar (links)*/
+#nav__link {
+    color: $color-primario;
+    font-size: $fuente-mid; /*tamano de la letra*/
+    transition: all 0.3s; /*animacion para ancla*/
+}
+
+#nav__link:hover { /*Elementos <a> cuando el mouse esté posicionado sobreellos*/
+    color: $color-secundario;
+}

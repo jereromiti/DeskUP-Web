@@ -1,0 +1,11 @@
+.footer__text {
+    font-size: $fuente-mid;
+  }
+  .footer__icon {
+      color: $color-primario;
+      transition: all 0.3s;
+  }
+  
+  .footer__icon:hover { /*Elementos <i> del footer cuando el mouse esté posicionado sobreellos*/
+      color: $color-secundario;
+  }
