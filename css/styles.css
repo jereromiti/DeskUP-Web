@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Variables*/
 /*Fonts Google*/
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300&family=Hind+Guntur&display=swap");
 @font-face {
@@ -38,7 +39,7 @@
 }
 
 #nav__link:hover { /*Elementos <a> cuando el mouse esté posicionado sobreellos*/
-  color: rgb(133, 133, 133);
+  color: #858585;
 }
 
 /* -----------------MAIN----------------- */
@@ -59,7 +60,7 @@
 
 /* tittle first section */
 .main__tittle {
-  border: 3px solid white;
+  border: 3px solid #fff;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -68,30 +69,17 @@
   color: #bcbbb7;
 }
 
-/* .img__first {
-  width: 31rem;
-  height: 31rem;
-} */
 /* -----------------FOOTER----------------- */
 .footer__icon {
   color: #fff;
 }
 
 .footer__icon:hover { /*Elementos <i> del footer cuando el mouse esté posicionado sobreellos*/
-  color: rgb(133, 133, 133);
+  color: #858585;
   transition: all 0.3s;
 }
 
 /* -----------------CARD----------------- */
-/*.container__cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-}
-
-.container__cards a {
-margin: 0 10px;
-}*/
 .card {
   --blur: 16px;
   --size: clamp(300px, 50vmin, 600px);
