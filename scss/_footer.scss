@@ -1,13 +1,10 @@
 footer {
-
     .footer__icon {
         color: $color-primario;
-        transition: all 0.3s; // Animacion del <icon> / link
-
+        transition: all 0.6s; // Animacion del <icon> / link
         &:hover { // Elementos <i> del footer cuando el mouse se posicione sobreellos
-            color: $color-secundario;
+            transform: translateY(-10px);
         }
-
     }
     
     .footer__text {
