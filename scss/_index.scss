@@ -44,7 +44,7 @@ main {
         height: 100%;
         object-fit: cover;
         transform: scale(calc(1 + (var(--hover, 0) * 0.25)));
-        transition: transform 0.2s;
+        transition: 0.2s;
     }
 
     .card__footer {
