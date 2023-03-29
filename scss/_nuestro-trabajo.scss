@@ -1,0 +1,10 @@
+// Animacion para imgs
+.np__img {
+  transition: all 0.5s;
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+//
