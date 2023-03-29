@@ -1,10 +1,30 @@
 // Animacion para imgs
-.np__img {
-  transition: all 0.5s;
-  
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-  }
+
+.main__nt {
+    .main__tittle {
+        align-items: center;
+          b {
+              background-color: currentColor;
+              display: block;
+              flex: 1;
+              height: 2px;
+              opacity: .1;
+          }
+    }
+    .nt__img {
+      transition: all 0.5s;
+      
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+    }
+    p {
+      text-align: start;
+    }
+    @media screen and (max-width: 960px) {
+      p {
+          text-align: center;
+      }
+    }
 }
-//

@@ -1,5 +1,16 @@
-// Decoration for <a> texts of gallery
-.gale__bs a {
-  text-decoration: none;
+.main__productos {
+  .main__tittle {
+      align-items: center;
+      b {
+          background-color: currentColor;
+          display: block;
+          flex: 1;
+          height: 2px;
+          opacity: .1;
+      }
+  }
+  // Decoration for <a> texts of gallery
+  .gale__bs a {
+    text-decoration: none;
+  }
 }
-//

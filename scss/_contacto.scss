@@ -1,4 +1,18 @@
+ .main__contact {
+    .main__tittle {
+        align-items: center;
+        b {
+            background-color: currentColor;
+            display: block;
+            flex: 1;
+            height: 2px;
+            opacity: .1;
+        }
+    }
+ }
+
 .form__container {
     background-color: $color-body;
     box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
 }
+
