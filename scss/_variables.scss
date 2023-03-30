@@ -1,4 +1,9 @@
-$color-primario: #fff;
-$color-secundario: #858585;
-$color-body: #bcbbb7;
+// variables
 $fuente-mid: 1.1rem;
+
+// mapa
+$colors: (
+  primary: #fff,
+  secondary: #858585,
+  body: #bcbbb7,
+);
