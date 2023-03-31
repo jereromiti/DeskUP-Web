@@ -2,11 +2,7 @@
   .main__tittle {
       align-items: center;
       b {
-          background-color: currentColor;
-          display: block;
-          flex: 1;
-          height: 2px;
-          opacity: .1;
+        @include mild-line;
       }
   }
   // Decoration for <a> texts of gallery

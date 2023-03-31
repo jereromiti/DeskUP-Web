@@ -156,9 +156,6 @@ main .index__tittle span {
 }
 .main__qs .main__tittle {
   align-items: center;
-  flex-flow: nowrap;
-  justify-content: space-between;
-  position: relative;
 }
 .main__qs .main__tittle b {
   background-color: currentColor;

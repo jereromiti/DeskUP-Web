@@ -1,15 +1,8 @@
 .main__qs {
     .main__tittle {
         align-items: center;
-        flex-flow: nowrap;
-        justify-content: space-between;
-        position: relative;
         b {
-            background-color: currentColor;
-            display: block;
-            flex: 1;
-            height: 2px;
-            opacity: .1;
+            @include mild-line;
         }
     }
     .container__parrafo {
@@ -24,7 +17,3 @@
         }
     }
 }
-
-
-
-
