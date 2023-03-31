@@ -6,3 +6,23 @@
     height: 2px;
     opacity: .1;
 }
+
+// Este mixin contiene la animacion del logo de Whatsapp que esta Fixed en todas las paginas
+@mixin wsp-fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    width: 55px;
+    margin: 0 12px 12px 0;
+    animation: rebote 1.5s infinite;
+  }
+  
+  @keyframes rebote {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-12px, -12px);
+    }
+}
