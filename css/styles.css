@@ -46,6 +46,12 @@ header .header__nav__row {
 header .header__nav__row #nav__logo {
   color: #fff;
 }
+header .header__nav__row .navbar-toggler {
+  border: none;
+}
+header .header__nav__row .navbar-toggler:focus {
+  box-shadow: none;
+}
 header .header__nav__row #nav__link {
   color: #fff;
   font-size: 1.1rem;

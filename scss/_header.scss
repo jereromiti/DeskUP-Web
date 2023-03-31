@@ -7,6 +7,14 @@ header {
         #nav__logo {
             color: map-get($colors, primary);
           }
+        
+        .navbar-toggler {
+            border: none;
+            
+            &:focus {
+                box-shadow: none;
+            }
+        }
 
         /*anclas Nav Bar (links)*/
         #nav__link {
