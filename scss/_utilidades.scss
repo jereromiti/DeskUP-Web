@@ -1,4 +1,13 @@
+// Colores de los background 
+  .body__bg {
+    background-color: map-get($colors, body);
+}
+
+.body__main {
+    background-color: map-get($colors, body-dark);
+}
+
 // logo tipo anuncio
 #wspFixed {
-    @include wsp-fixed
-  }
+  @include wsp-fixed
+}
