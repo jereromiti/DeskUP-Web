@@ -3,6 +3,7 @@ header {
 
     .header__nav__row {
         max-width: 78rem;
+        text-align: end;
 
         #nav__logo {
             color: map-get($colors, primary);
