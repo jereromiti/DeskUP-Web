@@ -16,11 +16,22 @@ main {
 
   .index__tittle { // TITTLE 
     border: 3px solid map-get($colors, primary); //Aplicando el mapa Colors, que dentro contiene Primary, usando "map-get".
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.4);
-
     span {
       color: #bcbbb7;
+    }
+  }
+
+  .index__btn__sb {
+    background-color: rgba(0,0,0, 0.4);
+    border: 2px solid map-get($colors, primary);
+    border-radius: 4px;
+    color: map-get($colors, primary);
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgb(255, 255, 255, 0.4);
+      color: map-get($colors, primary-dark);
     }
   }
 }
