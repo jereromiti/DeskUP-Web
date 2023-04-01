@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/styles.css">
 <!-- ICONOS FONTAWESOME -->
     <script src="https://kit.fontawesome.com/d24b0fed15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-tU1I6UzE6dw0eJ9tzWjOZCvA1OytJQPx0IgWjfzQj0b4vrH4cF4YMRgIq3+L5ngJ0IB1GN6t8pJq3crgt25xgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Contacto - DeskUP</title>
 </head>
 <body class="body__bg">
@@ -45,9 +46,9 @@
         </nav>
     </header>
     <hr class="m-0 py-1 text-light "> <!--linea divisoria-->
-    <main class="main__contact container-fluid w-50">
+    <main class="main__contact container">
          <!--Formulario de Contacto-->
-        <div class="container">
+        <div class="container-fluid w-75">
             <div class="text-center mt-5">
                 <h1 class="main__tittle d-flex text-center">
                     <b></b>
@@ -55,45 +56,29 @@
                     <b></b>
                 </h1>
             </div>
-            <div class="form__container row py-3 my-5">
-                <div class="col-md-12">
-                    <form class="form-horizontal" method="post">
-                        <div>
-                            <div class="form-group">
-                                <i class="fa fa-user bigicon"></i>
-                                <div class="col-md-8">
-                                    <input name="name" type="text" placeholder="Nombre y apellido" class="form-control" required>
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <i class="fa fa-envelope-o bigicon"></i>
-                                <div class="col-md-8">
-                                    <input name="email" type="email" placeholder="Correo electrónico" class="form-control" required>
-                                    </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <i class="fa fa-phone-square bigicon"></i>
-                                <div class="col-md-8">
-                                    <input name="phone" type="text" placeholder="Teléfono" class="form-control" required>
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <i class="fa fa-pencil-square-o bigicon"></i>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Comentario (opcional)" rows="7"></textarea>
-                                </div>
-                            </div>
-        
-                            <div class="form-group mt-3">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="form__container col-lg-12 row p-3 my-5">
+                <form action="./404.html" class="form-horizontal" method="post">
+                    <div class="form-group mb-3">
+                        <i class="fa fa-user bigicon"></i>
+                        <input name="name" type="text" placeholder="Nombre y apellido" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <i class="fa fa-envelope-o bigicon"></i>
+                        <input name="email" type="email" placeholder="Correo electrónico" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <i class="fa fa-phone-square bigicon"></i>
+                        <input name="phone" type="text" placeholder="Teléfono" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <i class="fa fa-pencil-square-o bigicon"></i>
+                        <textarea class="form-control" id="message" name="message" placeholder="Comentario (opcional)" rows="7"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary me-3">Enviar</button>
+                        <button type="reset" class="btn btn-primary">Limpiar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
