@@ -1,5 +1,4 @@
 // Animacion para imgs
-
 .main__nt {
     .main__tittle {
         align-items: center;
@@ -9,7 +8,6 @@
     }
     .nt__img {
       transition: all 0.5s;
-      
       &:hover {
         cursor: pointer;
         transform: scale(1.05);

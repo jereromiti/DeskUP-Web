@@ -8,6 +8,6 @@
 }
 
 // logo tipo anuncio
-#wspFixed {
-  @include wsp-fixed
+#wspFixed { // Haciendo uso del mixin
+  @include wsp-fixed 
 }

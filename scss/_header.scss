@@ -1,14 +1,11 @@
 header {
     z-index: 10;
-
     .header__nav__row {
         max-width: 78rem;
         text-align: end;
-
         #nav__logo {
             color: map-get($colors, primary);
           }
-        
         .navbar-toggler {
             border: none;
             
@@ -16,7 +13,6 @@ header {
                 box-shadow: none;
             }
         }
-
         /*anclas Nav Bar (links)*/
         #nav__link {
             color: map-get($colors, primary);
