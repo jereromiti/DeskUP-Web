@@ -91,47 +91,33 @@ main .index__btn__sb:hover {
   background-color: rgba(255, 255, 255, 0.4);
   color: #000;
 }
-
-.card {
-  --blur: 16px;
-  --size: clamp(300px, 50vmin, 600px);
-  width: var(--size);
-  aspect-ratio: 4/3;
-  position: relative;
-  border-radius: 2rem;
-  overflow: hidden;
-  color: #000;
-  transform: translateZ(0);
-}
-.card .card__img {
+main .content__cards {
   width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem 0 0.5rem 0;
+}
+main .content__cards .card {
+  width: 400px;
+  height: 500px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  border: none;
+  margin: 1.25rem;
+  padding: 0;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+main .content__cards .card img {
+  width: 90%;
+  height: 80%;
   object-fit: cover;
-  transform: scale(calc(1 + var(--hover, 0) * 0.25));
-  transition: 0.2s;
+  margin: 1.25rem 0 1.25rem 0;
 }
-.card .card__footer {
-  padding: 0 1.5rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: grid;
-  gap: 0.5ch;
-  background: hsla(0, 0%, 100%, 0.5);
-  backdrop-filter: blur(var(--blur));
-  height: 30%;
-  align-content: center;
-}
-.card .card__footer span:nth-of-type(1) {
-  font-size: calc(var(--size) * 0.065);
-}
-.card .card__footer span:nth-of-type(2) {
-  font-size: calc(var(--size) * 0.035);
-}
-
-.card:is(:hover, :focus-visible) {
-  --hover: 1;
+main .content__cards .card:hover {
+  transform: scale(1.05);
 }
 
 .main__productos .main__tittle {
