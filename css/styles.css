@@ -57,12 +57,18 @@ header .header__nav__row .navbar-toggler {
 header .header__nav__row .navbar-toggler:focus {
   box-shadow: none;
 }
-header .header__nav__row #nav__link {
-  color: #fff;
+header .header__nav__row #nav__link, header .header__nav__row #nav__link--index {
+  color: #000;
   font-size: 1.1rem;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
-header .header__nav__row #nav__link:hover {
+header .header__nav__row #nav__link:hover, header .header__nav__row #nav__link--index:hover {
+  color: #5e5e5d;
+}
+header .header__nav__row #nav__link--index {
+  color: #fff;
+}
+header .header__nav__row #nav__link--index:hover {
   color: #858585;
 }
 
