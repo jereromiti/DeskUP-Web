@@ -190,7 +190,10 @@ main .content__cards .card:hover {
   transition: all 0.4s;
 }
 .form__container .btn:hover {
-  background-color: #858585;
+  background-color: rgba(159, 226, 131, 0.6156862745);
+}
+.form__container .btn--danger:hover {
+  background-color: #ff6a6a;
 }
 
 .main__qs {

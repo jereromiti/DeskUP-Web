@@ -14,7 +14,12 @@
         border: none;
         transition: all 0.4s;
         &:hover {
-            background-color: map-get($colors, secondary);
+            background-color: map-get($colors, success);
+        }
+    }
+    .btn--danger {
+        &:hover {
+            background-color: map-get($colors, danger);
         }
     }
 }
