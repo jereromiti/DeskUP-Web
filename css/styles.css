@@ -158,7 +158,6 @@ main .content__cards .card:hover {
   transition: all 0.5s;
 }
 .main__nt .nt__img:hover {
-  cursor: pointer;
   transform: scale(1.05);
 }
 .main__nt p {
