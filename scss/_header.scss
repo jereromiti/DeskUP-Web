@@ -1,21 +1,26 @@
 header {
     z-index: 10;
-
     .header__nav__row {
         max-width: 78rem;
-
+        text-align: end;
         #nav__logo {
-            color: $color-primario;
+            color: map-get($colors, primary);
           }
-
+        .navbar-toggler {
+            border: none;
+            
+            &:focus {
+                box-shadow: none;
+            }
+        }
         /*anclas Nav Bar (links)*/
         #nav__link {
-            color: $color-primario;
+            color: map-get($colors, primary);
             font-size: $fuente-mid; // Size font
             transition: all 0.3s; // Animacion del <a> / link
 
             &:hover { // Elementos <a> cuando el mouse se posicione sobreellos
-                color: $color-secundario;
+                color: map-get($colors, secondary);
             }
         }
     }

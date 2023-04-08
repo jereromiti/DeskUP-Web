@@ -1,0 +1,18 @@
+.main__qs {
+    .main__tittle {
+        align-items: center;
+        b {
+            @include mild-line;
+        }
+    }
+    .container__parrafo {
+        text-align: start;
+    }
+    /* Cuando la pantalla este en tablet/mobile
+    el texto se va alinear en el centro */
+    @media screen and (max-width: 960px) {
+        .container__parrafo {
+            text-align: center;
+        }
+    }
+}

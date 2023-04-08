@@ -1,0 +1,12 @@
+.main__productos {
+  .main__tittle {
+      align-items: center;
+      b {
+        @include mild-line;
+      }
+  }
+  // Decoration for <a> texts of gallery
+  .gale__bs a {
+    text-decoration: none;
+  }
+}

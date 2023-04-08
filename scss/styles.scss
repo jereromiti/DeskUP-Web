@@ -1,10 +1,12 @@
 @import "variables.scss";
+@import "mixin.scss";
 @import "reset.scss";
+@import "utilidades.scss";
 @import "fonts.scss";
-@import "body.scss";
 @import "header.scss";
 @import "index.scss";
-@import "productos.scss";
-@import "nuestro-trabajo.scss";
-@import "contacto.scss";
+@import "main-productos.scss";
+@import "main-nuestro-trabajo.scss";
+@import "main-contacto.scss";
+@import "main-quienes-somos.scss";
 @import "footer.scss";

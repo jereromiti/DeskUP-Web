@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunicate con DeskUP en este formulario de contacto">
+    <meta name="keywords"  content="escritorios, muebles, oficina, computadora, moderno, minimalista, contacto, contactate">
     <link rel="shortcut icon" href="../favicon.ico">
 <!--ESTILOS BOOSTRAP-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -45,52 +47,39 @@
         </nav>
     </header>
     <hr class="m-0 py-1 text-light "> <!--linea divisoria-->
-    <main class="container-fluid">
+    <main class="main__contact container">
          <!--Formulario de Contacto-->
-        <div class="container">
+        <div class="container-fluid w-75">
             <div class="text-center mt-5">
-                <h1 class="mb-2">Contactate con nosotros</h1>
-                <p class="m-0">Te enviaremos noticias y promociones exclusivamente para vos</p>
+                <h1 class="main__tittle d-flex text-center">
+                    <b></b>
+                    <span class="mx-4">Contactate con nosotros</span>
+                    <b></b>
+                </h1>
             </div>
-            <div class="form__container row py-2 my-5">
-                <div class="col-md-12">
-                    <form class="form-horizontal" method="post">
-                        </div>
-                            <div class="form-group">
-                                <i class="fa fa-user bigicon"></i>
-                                <div class="col-md-8">
-                                    <input name="name" type="text" placeholder="Nombre y apellido" class="form-control" required>
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <i class="fa fa-envelope-o bigicon"></i>
-                                <div class="col-md-8">
-                                    <input name="email" type="email" placeholder="Correo electrónico" class="form-control" required>
-                                    </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <i class="fa fa-phone-square bigicon"></i>
-                                <div class="col-md-8">
-                                    <input name="phone" type="text" placeholder="Teléfono" class="form-control" required>
-                                </div>
-                            </div>
-        
-                            <div class="form-group">
-                                <i class="fa fa-pencil-square-o bigicon"></i>
-                                <div class="col-md-8">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Comentario (opcional)" rows="7"></textarea>
-                                </div>
-                            </div>
-        
-                            <div class="form-group mt-3">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <div class="form__container col-lg-12 row p-3 my-5">
+                <form action="./404.html" class="form-horizontal" method="post">
+                    <div class="form-group mb-3">
+                        <i class="fa fa-user bigicon"></i>
+                        <input name="name" type="text" placeholder="Nombre y apellido" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <i class="fa fa-envelope-o bigicon"></i>
+                        <input name="email" type="email" placeholder="Correo electrónico" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <i class="fa fa-phone-square bigicon"></i>
+                        <input name="phone" type="text" placeholder="Teléfono" class="form-control" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <i class="fa fa-pencil-square-o bigicon"></i>
+                        <textarea class="form-control" id="message" name="message" placeholder="Comentario (opcional)" rows="7"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary me-3">Enviar</button>
+                        <button type="reset" class="btn btn-primary">Limpiar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </main>
@@ -118,6 +107,7 @@
             <p class="mb-0">Developed by <a target="_blank" href="https://www.linkedin.com/in/jerem%C3%ADas-romiti-6a7943263/" class="text-decoration-none text-success">Jere ♥️</a></p>
         </div>
     </footer>
+    <a href="https://web.whatsapp.com/" target="_blank"><img id="wspFixed" src="../assets/img/svg/wsp.svg" alt="Contactanos por Whatsapp"></a>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

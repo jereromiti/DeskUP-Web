@@ -1,4 +1,11 @@
-$color-primario: #fff;
-$color-secundario: #858585;
-$color-body: #bcbbb7;
+// Variables
 $fuente-mid: 1.1rem;
+
+// Mapa SASS
+$colors: (
+  primary: #fff,
+  primary-dark: #000,
+  secondary: #858585,
+  body: #bcbbb7,
+  body-dark:#5e5e5d,
+);
