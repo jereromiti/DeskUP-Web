@@ -3,7 +3,7 @@ header {
     .header__nav__row {
         max-width: 78rem;
         text-align: end;
-        #nav__logo {
+        .nav__logo {
             color: map-get($colors, primary);
           }
         .navbar-toggler {
@@ -15,18 +15,11 @@ header {
         }
         /*anclas Nav Bar (links)*/
         #nav__link {
-            color: map-get($colors, primary-dark);
+            color: map-get($colors, primary);
             font-size: $fuente-mid; // Size font
             transition: all 0.4s; // Animacion del <a> / link
 
             &:hover { // Elementos <a> cuando el mouse se posicione sobreellos
-                color: map-get($colors, body-dark);
-            }
-        }
-        #nav__link--index {
-            @extend #nav__link ;
-            color: map-get($colors, primary);
-            &:hover {
                 color: map-get($colors, secondary);
             }
         }

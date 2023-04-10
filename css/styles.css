@@ -15,7 +15,7 @@
 }
 
 .body__bg {
-  background-color: #bcbbb7;
+  background-color: #373a3d;
 }
 
 .body__main {
@@ -48,7 +48,7 @@ header .header__nav__row {
   text-align: end;
   /*anclas Nav Bar (links)*/
 }
-header .header__nav__row #nav__logo {
+header .header__nav__row .nav__logo {
   color: #fff;
 }
 header .header__nav__row .navbar-toggler {
@@ -57,18 +57,12 @@ header .header__nav__row .navbar-toggler {
 header .header__nav__row .navbar-toggler:focus {
   box-shadow: none;
 }
-header .header__nav__row #nav__link, header .header__nav__row #nav__link--index {
-  color: #000;
+header .header__nav__row #nav__link {
+  color: #fff;
   font-size: 1.1rem;
   transition: all 0.4s;
 }
-header .header__nav__row #nav__link:hover, header .header__nav__row #nav__link--index:hover {
-  color: #5e5e5d;
-}
-header .header__nav__row #nav__link--index {
-  color: #fff;
-}
-header .header__nav__row #nav__link--index:hover {
+header .header__nav__row #nav__link:hover {
   color: #858585;
 }
 
@@ -134,7 +128,7 @@ main .content__cards .card:hover {
   align-items: center;
 }
 .main__productos .main__tittle b {
-  background-color: currentColor;
+  background-color: #fff;
   display: block;
   flex: 1;
   height: 2px;
@@ -148,7 +142,7 @@ main .content__cards .card:hover {
   align-items: center;
 }
 .main__nt .main__tittle b {
-  background-color: currentColor;
+  background-color: #fff;
   display: block;
   flex: 1;
   height: 2px;
@@ -173,7 +167,7 @@ main .content__cards .card:hover {
   align-items: center;
 }
 .main__contact .main__tittle b {
-  background-color: currentColor;
+  background-color: #fff;
   display: block;
   flex: 1;
   height: 2px;
@@ -200,7 +194,7 @@ main .content__cards .card:hover {
   align-items: center;
 }
 .main__qs .main__tittle b {
-  background-color: currentColor;
+  background-color: #fff;
   display: block;
   flex: 1;
   height: 2px;
@@ -255,6 +249,9 @@ main .content__cards .card:hover {
   background-color: #000;
 }
 
+footer {
+  background: linear-gradient(to right, #ff00f4, #da00f5, #b100f5, #7d00f5, #1f00f4);
+}
 footer .footer__icon {
   color: #fff;
   transition: all 0.6s;
@@ -264,6 +261,14 @@ footer .footer__icon:hover {
 }
 footer .footer__text {
   font-size: 1.1rem;
+}
+footer .footer__text .jere {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+footer .footer__text .jere:hover {
+  color: #858585;
 }
 
 /*# sourceMappingURL=styles.css.map */
