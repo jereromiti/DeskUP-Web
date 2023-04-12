@@ -4,9 +4,56 @@
       b {
         @include mild-line;
       }
-  }
-  // Decoration for <a> texts of gallery
-  .gale__bs a {
-    text-decoration: none;
+    }
+  .gale__grid {
+    margin: auto 1rem;
+    .container__cuadro {
+      position: relative;
+      a {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: map-get($colors, primary);
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: map-get($colors, background--050);
+        /* Posición del texto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover, :focus {
+          opacity: 1;
+        }
+      }
+      .cuadro__img {
+        line-height: 0;
+        overflow: hidden;
+        img {
+          filter: blur(0px);
+          transition: filter 0.3s ease-in;
+          transform: scale(1.1);
+          &:hover, :focus {
+            filter: blur(2px);
+          }
+        }
+      }
+    }
   }
 }
+
+// @media (hover: none) { 
+//   .cuadro__titulo {
+//       opacity: 1;
+//   }
+
+//   .cuadro__img img {
+//       filter: blur(2px);
+//   }
+// }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300&family=Hind+Guntur&display=swap");
 @keyframes rebote {
   0%, 100% {
@@ -16,10 +17,6 @@
 
 .body__bg {
   background-color: #373a3d;
-}
-
-.body__main {
-  background-color: #5e5e5d;
 }
 
 #wspFixed {
@@ -89,7 +86,7 @@ main .index__btn__sb {
   border-radius: 4px;
   color: #fff;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 main .index__btn__sb:hover {
   background-color: rgba(255, 255, 255, 0.4);
@@ -134,8 +131,46 @@ main .content__cards .card:hover {
   height: 2px;
   opacity: 0.1;
 }
-.main__productos .gale__bs a {
+.main__productos .gale__grid {
+  margin: auto 1rem;
+}
+.main__productos .gale__grid .container__cuadro {
+  position: relative;
+}
+.main__productos .gale__grid .container__cuadro a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
   text-decoration: none;
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: rgba(55, 58, 61, 0.3411764706);
+  /* Posición del texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__productos .gale__grid .container__cuadro a:hover, .main__productos .gale__grid .container__cuadro a :focus {
+  opacity: 1;
+}
+.main__productos .gale__grid .container__cuadro .cuadro__img {
+  line-height: 0;
+  overflow: hidden;
+}
+.main__productos .gale__grid .container__cuadro .cuadro__img img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+.main__productos .gale__grid .container__cuadro .cuadro__img img:hover, .main__productos .gale__grid .container__cuadro .cuadro__img img :focus {
+  filter: blur(2px);
 }
 
 .main__nt .main__tittle {
@@ -175,7 +210,7 @@ main .content__cards .card:hover {
 }
 
 .form__container .btn {
-  background-color: #5e5e5d;
+  background-color: #373a3d;
   border: none;
   transition: all 0.4s;
 }
@@ -238,7 +273,7 @@ main .content__cards .card:hover {
   text-decoration: none;
   font-family: Myriad;
   font-size: large;
-  background-color: #5e5e5d;
+  background-color: #373a3d;
   color: #fff;
   padding: 8px 20px;
   border-radius: 10px;
