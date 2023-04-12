@@ -63,4 +63,20 @@ main {
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .banner { //Background of main
+      // imagen de fondo del Main
+      height: 100vh;
+      background-image: url("../assets/img/desksetup-main-mobile.jpg");
+      // posicion de la imagen
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      z-index: -10;
+      // effect background
+      filter: brightness(50%) blur(0.2rem);
+    }
+  }
 }
+
