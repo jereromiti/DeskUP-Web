@@ -65,7 +65,7 @@ header .header__nav__row #nav__link:hover {
 
 main .banner {
   height: 100vh;
-  background-image: url("../assets/img/desksetup-main.jpg");
+  background-image: url("../assets/img/desksetup-main-mobile.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,7 +123,7 @@ main .content__cards .card:hover {
 @media screen and (max-width: 768px) {
   main .banner {
     height: 100vh;
-    background-image: url("../assets/img/desksetup-main-mobile.jpg");
+    background-image: url("../assets/img/desksetup-main-mobile.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
