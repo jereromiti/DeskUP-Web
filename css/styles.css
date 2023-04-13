@@ -192,6 +192,14 @@ main .content__cards .desktop {
   filter: blur(2px);
 }
 
+@media (hover: none) {
+  .cuadro__titulo {
+    opacity: 1;
+  }
+  .cuadro__img img {
+    filter: blur(2px);
+  }
+}
 .main__nt .main__tittle {
   align-items: center;
 }
