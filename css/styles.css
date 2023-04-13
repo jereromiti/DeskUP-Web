@@ -148,6 +148,7 @@ main .content__cards .card:hover {
 }
 .main__productos .gale__grid .container__cuadro {
   position: relative;
+  overflow: hidden;
 }
 .main__productos .gale__grid .container__cuadro a {
   font-size: 1.5em;
@@ -163,7 +164,7 @@ main .content__cards .card:hover {
   left: 0;
   opacity: 0;
   transition: opacity 0.5s;
-  background: rgba(55, 58, 61, 0.3411764706);
+  background: rgba(55, 58, 61, 0.5411764706);
   /* Posición del texto */
   display: flex;
   align-items: center;
@@ -174,7 +175,6 @@ main .content__cards .card:hover {
 }
 .main__productos .gale__grid .container__cuadro .cuadro__img {
   line-height: 0;
-  overflow: hidden;
 }
 .main__productos .gale__grid .container__cuadro .cuadro__img img {
   filter: blur(0px);
