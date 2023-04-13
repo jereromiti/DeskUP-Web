@@ -56,26 +56,33 @@ main {
         width: 90%;
         height: 80%;
         object-fit: cover;
-        margin: 1.25rem 0 1.25rem 0;
+        margin: 1.25rem 0 .8rem 0;
       }
       &:hover {
         transform: scale(1.05);
       }
     }
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
   }
+
+  // Adaptacion del background image a mobile
   @media screen and (max-width: 768px) {
-    .banner { //Background of main
-      // imagen de fondo del Main
-      height: 100vh;
+    .banner {
       background-image: url("../assets/img/desksetup-main-mobile.webp");
-      // posicion de la imagen
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      z-index: -10;
-      // effect background
-      filter: brightness(50%) blur(0.2rem);
+    }
+  }
+  // Media Query para las cards que funcionan con AOS
+  @media screen and (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
     }
   }
 }

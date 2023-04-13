@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 <!-- ICONOS FONTAWESOME -->
     <script src="https://kit.fontawesome.com/d24b0fed15.js" crossorigin="anonymous"></script>
+<!-- AOS -->
+    <link href="./css/aos.css" rel="stylesheet">
     <title>DeskUP</title>
 </head>
 <body class="body__bg">
@@ -57,18 +59,37 @@
     <!--second section-->
         <div class="container-fluid text-center my-5">
             <h2 class="text-light my-3">Has click en algunos de nuestros productos.</h2>
+            <!-- Version escritorio (AOS) -->
             <div class="content__cards row">
-                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 ">
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 desktop" data-aos="zoom-in-up" data-aos-offset="200">
                     <img src="./assets/img/desk1.webp" alt="Escritorio corto con bandeja">
-                    <h3 class="text-light fs-3">Desk Large</h3>
-                    <p class="text-light fs-6">Escritorio corto con bandeja</p>
+                    <h3 class="text-light fs-3 m-0">Desk Large</h3>
+                    <p class="text-light fs-6 m-0">Escritorio corto con bandeja</p>
                 </a>
-                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12">
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 desktop" data-aos="zoom-in-up" data-aos-offset="200">
                     <img src="./assets/img/desk3.webp" alt="Escritorio largo con combinación de melaminas">
-                    <h3 class="text-light fs-3">Desk XXL</h3>
-                    <p class="text-light fs-6">Escritorio largo con variedad de melaminas</p>
+                    <h3 class="text-light fs-3 m-0">Desk XXL</h3>
+                    <p class="text-light fs-6 m-0">Escritorio largo con variedad de melaminas</p>
                 </a>
-                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12">
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 desktop" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk2.webp" alt="Escritorio tamaño mediano de color blanco simple">
+                    <h3 class="text-light fs-3 m-0">Desk XL</h3>
+                    <p class="text-light fs-6 m-0">Escritorio mediano de melamina simple</p>
+                </a>
+            </div>
+            <!-- Version Mobile (AOS) -->
+            <div class="content__cards row">
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 mobile" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk1.webp" alt="Escritorio corto con bandeja">
+                    <h3 class="text-light fs-3 m-0">Desk Large</h3>
+                    <p class="text-light fs-6 m-0">Escritorio corto con bandeja</p>
+                </a>
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 mobile" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk3.webp" alt="Escritorio largo con combinación de melaminas">
+                    <h3 class="text-light fs-3 m-0">Desk XXL</h3>
+                    <p class="text-light fs-6 m-0">Escritorio largo con variedad de melaminas</p>
+                </a>
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 mobile" data-aos="zoom-in-up" data-aos-offset="200">
                     <img src="./assets/img/desk2.webp" alt="Escritorio tamaño mediano de color blanco simple">
                     <h3 class="text-light fs-3">Desk XL</h3>
                     <p class="text-light fs-6">Escritorio mediano de melamina simple</p>
@@ -103,5 +124,9 @@
     <a href="https://web.whatsapp.com/" target="_blank"><img id="wspFixed" src="./assets/img/svg/wsp.svg" alt="Contactanos por Whatsapp"></a>
     <!-- bootstrap  -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -115,21 +115,28 @@ main .content__cards .card img {
   width: 90%;
   height: 80%;
   object-fit: cover;
-  margin: 1.25rem 0 1.25rem 0;
+  margin: 1.25rem 0 0.8rem 0;
 }
 main .content__cards .card:hover {
   transform: scale(1.05);
 }
+main .content__cards .mobile {
+  display: none;
+}
+main .content__cards .desktop {
+  display: block;
+}
 @media screen and (max-width: 768px) {
   main .banner {
-    height: 100vh;
     background-image: url("../assets/img/desksetup-main-mobile.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -10;
-    filter: brightness(50%) blur(0.2rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  main .desktop {
+    display: none;
+  }
+  main .mobile {
+    display: block;
   }
 }
 
