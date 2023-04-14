@@ -46,14 +46,12 @@
       }
     }
   }
-}
-
-@media (hover: none) { 
-  .cuadro__titulo {
-      opacity: 1;
-  }
-
-  .cuadro__img img {
-      filter: blur(2px);
+  // Cuando la pantalla sea de 992px o menor
+  @media screen and (max-width: 992px) {
+    #cuadro__titulo {
+      background: map-get($colors, background--020); // Sera mas visible la imagen de fondo
+      opacity: 1; // el hover de los cuadros va a ser visible en todo momento
+      font-size: 1.2em; // la fuente de la letra del mismo se reducira a 1.2em
+    }
   }
 }

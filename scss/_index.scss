@@ -85,5 +85,13 @@ main {
       display: block;
     }
   }
+
+  // Cuando la pantalla sea de 768px o menor el container del titulo sera de 350px de ancho
+  @media screen and (max-width: 768px) {
+    .index__tittle {
+      width: 350px;
+      height: auto;
+    }
+  }
 }
 

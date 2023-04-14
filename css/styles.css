@@ -139,6 +139,12 @@ main .content__cards .desktop {
     display: block;
   }
 }
+@media screen and (max-width: 768px) {
+  main .index__tittle {
+    width: 350px;
+    height: auto;
+  }
+}
 
 .main__productos .main__tittle {
   align-items: center;
@@ -191,15 +197,14 @@ main .content__cards .desktop {
 .main__productos .gale__grid .container__cuadro .cuadro__img img:hover, .main__productos .gale__grid .container__cuadro .cuadro__img img :focus {
   filter: blur(2px);
 }
-
-@media (hover: none) {
-  .cuadro__titulo {
+@media screen and (max-width: 992px) {
+  .main__productos #cuadro__titulo {
+    background: rgba(55, 58, 61, 0.3647058824);
     opacity: 1;
-  }
-  .cuadro__img img {
-    filter: blur(2px);
+    font-size: 1.2em;
   }
 }
+
 .main__nt .main__tittle {
   align-items: center;
 }
