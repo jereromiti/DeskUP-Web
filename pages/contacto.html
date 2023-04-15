@@ -18,7 +18,7 @@
 <body class="body__bg">
 <!-- CABEZERA DE LA PAGINA Y LINKS DE NAVEGACION -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light header__nav">
+        <nav class="navbar navbar-expand-lg navbar-dark header__nav">
             <div class="container-fluid header__nav__row ">
             <a class="navbar-brand fs-1 fw-bold nav__logo " href="../index.html">DeskUP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,36 +48,48 @@
     </header>
     <hr class="m-0 py-1 text-light "> <!--linea divisoria-->
     <main class="main__contact container">
-         <!--Formulario de Contacto-->
-        <div class="container-fluid w-75">
-            <div class="text-center mt-5">
-                <h1 class="main__tittle d-flex text-center">
-                    <b></b>
-                    <span class="mx-4">Contactate con nosotros</span>
-                    <b></b>
-                </h1>
+        <div class="text-center mt-5">
+            <h1 class="main__tittle d-flex text-center">
+                <b></b>
+                <span class="mx-4 text-light">Contactate con nosotros</span>
+                <b></b>
+            </h1>
+        </div>
+        <div class="row my-5">
+            <!--Mapa-->
+            <div class="col-lg-6 d-flex flex-column pe-lg-5">
+                <h2 class="text-center mb-5 text-light">Visitá nuestra sucursal</h2>
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.04956875883!2d-60.62923326961257!3d-32.94839190834476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1dc9b6d36f%3A0x97b9e9584d94d851!2sMonumento%20Hist%C3%B3rico%20Nacional%20a%20la%20Bandera!5e0!3m2!1ses!2sar!4v1681088295661!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <hr class="hrMap hrHidden my-5 text-light"> 
             </div>
-            <div class="form__container col-lg-12 row p-3 my-5">
-                <form action="./404.html" class="form-horizontal" method="post">
-                    <div class="form-group mb-3">
-                        <i class="fa fa-user bigicon"></i>
-                        <input name="name" type="text" placeholder="Nombre y apellido" class="form-control" required>
+            <!--Formulario de contacto-->
+            <div class="form__container col-lg-6 ps-lg-5">
+                <h2 class="text-center mb-5 text-light">Enterate sobre noticias y descuentos</h2>
+                <form action="404.html">
+                    <div class="row">
+                        <div class="col-lg-6 form-outline mb-4">
+                            <label class="form-label text-light">Nombre</label>
+                            <input class="form-control" type="text" placeholder="Escriba su nombre" required>
+                        </div>
+                        <div class="col-lg-6 form-outline mb-4">
+                            <label class="form-label text-light">Apellido</label>
+                            <input class="form-control" type="text" placeholder="Escriba su apellido" required>
+                        </div>
                     </div>
-                    <div class="form-group mb-3">
-                        <i class="fa fa-envelope-o bigicon"></i>
-                        <input name="email" type="email" placeholder="Correo electrónico" class="form-control" required>
+                    <div class="form-outline mb-4">
+                        <label class="form-label text-light">Email</label>
+                        <input class="form-control" type="email" placeholder="Escriba su correo electrónico" required>
                     </div>
-                    <div class="form-group mb-3">
-                        <i class="fa fa-phone-square bigicon"></i>
-                        <input name="phone" type="text" placeholder="Teléfono" class="form-control" required>
+                    <div class="form-outline mb-4">
+                        <label class="form-label text-light">Teléfono</label>
+                        <input class="form-control" type="tel" placeholder="Escriba su número telefónico" required>
                     </div>
-                    <div class="form-group mb-3">
-                        <i class="fa fa-pencil-square-o bigicon"></i>
-                        <textarea class="form-control" id="message" name="message" placeholder="Comentario (opcional)" rows="7"></textarea>
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" cols="30" rows="10" placeholder="Escriba un comentario (opcional)"></textarea>
                     </div>
-                    <div>
-                        <button type="submit" class="btn btn-primary me-3">Enviar</button>
-                        <button type="reset" class="btn btn-primary">Limpiar</button>
+                    <div class="form-outline mb-4 text-start">
+                        <input type="submit" class="btn btn-primary me-3" value="Enviar">
+                        <input type="reset" class="btn btn--danger btn-primary" value="Borrar">
                     </div>
                 </form>
             </div>
@@ -104,7 +116,7 @@
         <!--Texto de footer-->
         <div class="footer__text text-light fs-6">
             <p class="my-0 pb-2">DeskUP 2023 - Todos los derechos reservados</p>
-            <p class="mb-0">Developed by <a target="_blank" href="https://www.linkedin.com/in/jerem%C3%ADas-romiti-6a7943263/" class="text-decoration-none text-success">Jere ♥️</a></p>
+            <p class="mb-0">Developed by <a target="_blank" href="https://www.linkedin.com/in/jerem%C3%ADas-romiti-6a7943263/" class="jere">Jere ♥️</a></p>
         </div>
     </footer>
     <a href="https://web.whatsapp.com/" target="_blank"><img id="wspFixed" src="../assets/img/svg/wsp.svg" alt="Contactanos por Whatsapp"></a>

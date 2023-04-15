@@ -3,7 +3,7 @@ header {
     .header__nav__row {
         max-width: 78rem;
         text-align: end;
-        #nav__logo {
+        .nav__logo {
             color: map-get($colors, primary);
           }
         .navbar-toggler {
@@ -17,7 +17,7 @@ header {
         #nav__link {
             color: map-get($colors, primary);
             font-size: $fuente-mid; // Size font
-            transition: all 0.3s; // Animacion del <a> / link
+            transition: all 0.4s; // Animacion del <a> / link
 
             &:hover { // Elementos <a> cuando el mouse se posicione sobreellos
                 color: map-get($colors, secondary);

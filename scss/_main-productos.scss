@@ -4,9 +4,54 @@
       b {
         @include mild-line;
       }
+    }
+  .gale__grid {
+    margin: auto 1rem;
+    .container__cuadro {
+      position: relative;
+      overflow: hidden;
+      a {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: map-get($colors, primary);
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: map-get($colors, background--050);
+        /* Posición del texto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover, :focus {
+          opacity: 1;
+        }
+      }
+      .cuadro__img {
+        line-height: 0;
+        img {
+          filter: blur(0px);
+          transition: filter 0.3s ease-in;
+          transform: scale(1.1);
+          &:hover, :focus {
+            filter: blur(2px);
+          }
+        }
+      }
+    }
   }
-  // Decoration for <a> texts of gallery
-  .gale__bs a {
-    text-decoration: none;
+  // Cuando la pantalla sea de 992px o menor
+  @media screen and (max-width: 992px) {
+    #cuadro__titulo {
+      background: map-get($colors, background--020); // Sera mas visible la imagen de fondo
+      opacity: 1; // el hover de los cuadros va a ser visible en todo momento
+      font-size: 1.2em; // la fuente de la letra del mismo se reducira a 1.2em
+    }
   }
 }

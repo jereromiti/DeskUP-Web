@@ -1,9 +1,5 @@
 // Colores de los background 
   .body__bg {
-    background-color: map-get($colors, body);
-}
-
-.body__main {
     background-color: map-get($colors, body-dark);
 }
 

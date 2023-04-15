@@ -3,7 +3,7 @@ main {
   .banner { //Background of main
     // imagen de fondo del Main
     height: 100vh;
-    background-image: url("../assets/img/desksetup-main.jpg");
+    background-image: url("../assets/img/desksetup-main-mobile.webp");
     // posicion de la imagen
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@ main {
     border-radius: 4px;
     color: map-get($colors, primary);
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.5s;
     &:hover {
       background-color: rgb(255, 255, 255, 0.4);
       color: map-get($colors, primary-dark);
@@ -56,11 +56,43 @@ main {
         width: 90%;
         height: 80%;
         object-fit: cover;
-        margin: 1.25rem 0 1.25rem 0;
+        margin: 1.25rem 0 .8rem 0;
       }
       &:hover {
         transform: scale(1.05);
       }
     }
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
+  }
+
+  // Adaptacion del background image a mobile
+  @media screen and (max-width: 767px) {
+    .banner {
+      background-image: url("../assets/img/desksetup-main-mobile.webp");
+    }
+  }
+
+  // Media Query para las cards que funcionan con AOS
+  @media screen and (max-width: 767px) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+  }
+
+  // Cuando la pantalla sea de 767px o menor el container del titulo sera de 350px de ancho
+  @media screen and (max-width: 767px) {
+    .index__tittle {
+      width: 350px;
+      height: auto;
+    }
   }
 }
+

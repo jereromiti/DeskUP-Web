@@ -7,14 +7,17 @@
     }
  }
 .form__container {
-    background-color: map-get($colors, body);;
-    box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
     .btn {
-        background-color: map-get($colors, body-dark);
+        background-color: map-get($colors, secondary);
         border: none;
         transition: all 0.4s;
         &:hover {
-            background-color: map-get($colors, secondary);
+            background-color: map-get($colors, success);
+        }
+    }
+    .btn--danger {
+        &:hover {
+            background-color: map-get($colors, danger);
         }
     }
 }

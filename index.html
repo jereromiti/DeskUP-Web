@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DeskUP es un sitio web de escritorios modernos para computadoras y oficinas.">
+    <meta name="description" content="DeskUP es una empresa de comercialización de escritorios modernos para computadoras y oficinas, con el fin de mejorar el confort en el area que sea utilizado. Gracias al convenio con empresas de logística más representativas del país, es posible realizar entregas a todo el territorio argentino.">
     <meta name="keywords"  content="escritorios, muebles, oficina, computadora, moderno, minimalista">
     <link rel="shortcut icon" href="./favicon.ico">
 <!--ESTILOS BOOSTRAP-->
@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="./css/styles.css">
 <!-- ICONOS FONTAWESOME -->
     <script src="https://kit.fontawesome.com/d24b0fed15.js" crossorigin="anonymous"></script>
+<!-- AOS -->
+    <link href="./css/aos.css" rel="stylesheet">
     <title>DeskUP</title>
 </head>
-<body class="body__main">
+<body class="body__bg">
 <!-- CABEZERA DE LA PAGINA Y LINKS DE NAVEGACION -->
     <header class="position-absolute w-100">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid header__nav__row">
-              <a class="navbar-brand fs-1 fw-bold" id="nav__logo" href="#">DeskUP</a>
+              <a class="navbar-brand fs-1 fw-bold nav__logo" href="#">DeskUP</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -57,19 +59,38 @@
     <!--second section-->
         <div class="container-fluid text-center my-5">
             <h2 class="text-light my-3">Has click en algunos de nuestros productos.</h2>
+            <!-- Version escritorio (AOS) -->
             <div class="content__cards row">
-                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 ">
-                    <img src="./assets/img/desk1.jpg" alt="Escritorio corto con bandeja">
-                    <h3 class="text-light fs-3">Desk Large</h3>
-                    <p class="text-light fs-6">Escritorio corto con bandeja</p>
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 desktop" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk1.webp" alt="Escritorio corto con bandeja">
+                    <h3 class="text-light fs-3 m-0">Desk Large</h3>
+                    <p class="text-light fs-6 m-0">Escritorio corto con bandeja</p>
                 </a>
-                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12">
-                    <img src="./assets/img/desk3.jpg" alt="Escritorio largo con combinación de melaminas">
-                    <h3 class="text-light fs-3">Desk XXL</h3>
-                    <p class="text-light fs-6">Escritorio largo con variedad de melaminas</p>
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 desktop" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk3.webp" alt="Escritorio largo con combinación de melaminas">
+                    <h3 class="text-light fs-3 m-0">Desk XXL</h3>
+                    <p class="text-light fs-6 m-0">Escritorio largo con variedad de melaminas</p>
                 </a>
-                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12">
-                    <img src="./assets/img/desk2.jpg" alt="Escritorio tamaño mediano de color blanco simple">
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 desktop" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk2.webp" alt="Escritorio tamaño mediano de color blanco simple">
+                    <h3 class="text-light fs-3 m-0">Desk XL</h3>
+                    <p class="text-light fs-6 m-0">Escritorio mediano de melamina simple</p>
+                </a>
+            </div>
+            <!-- Version Mobile (AOS) -->
+            <div class="content__cards row">
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 mobile" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk1.webp" alt="Escritorio corto con bandeja">
+                    <h3 class="text-light fs-3 m-0">Desk Large</h3>
+                    <p class="text-light fs-6 m-0">Escritorio corto con bandeja</p>
+                </a>
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 mobile" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk3.webp" alt="Escritorio largo con combinación de melaminas">
+                    <h3 class="text-light fs-3 m-0">Desk XXL</h3>
+                    <p class="text-light fs-6 m-0">Escritorio largo con variedad de melaminas</p>
+                </a>
+                <a href="./pages/productos.html" class="card col-lg-4 col-md-12 col-sm-12 mobile" data-aos="zoom-in-up" data-aos-offset="200">
+                    <img src="./assets/img/desk2.webp" alt="Escritorio tamaño mediano de color blanco simple">
                     <h3 class="text-light fs-3">Desk XL</h3>
                     <p class="text-light fs-6">Escritorio mediano de melamina simple</p>
                 </a>
@@ -97,11 +118,15 @@
         <!--Texto de footer-->
         <div class="footer__text text-light fs-6">
             <p class="my-0 pb-2">DeskUP 2023 - Todos los derechos reservados</p>
-            <p class="mb-0">Developed by <a target="_blank" href="https://www.linkedin.com/in/jerem%C3%ADas-romiti-6a7943263/" class="text-decoration-none text-success">Jere ♥️</a></p>
+            <p class="mb-0">Developed by <a target="_blank" href="https://www.linkedin.com/in/jerem%C3%ADas-romiti-6a7943263/" class="jere">Jere ♥️</a></p>
         </div>
     </footer>
     <a href="https://web.whatsapp.com/" target="_blank"><img id="wspFixed" src="./assets/img/svg/wsp.svg" alt="Contactanos por Whatsapp"></a>
     <!-- bootstrap  -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
