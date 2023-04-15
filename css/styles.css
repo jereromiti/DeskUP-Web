@@ -126,12 +126,12 @@ main .content__cards .mobile {
 main .content__cards .desktop {
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main .banner {
     background-image: url("../assets/img/desksetup-main-mobile.webp");
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main .desktop {
     display: none;
   }
@@ -139,7 +139,7 @@ main .content__cards .desktop {
     display: block;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   main .index__tittle {
     width: 350px;
     height: auto;

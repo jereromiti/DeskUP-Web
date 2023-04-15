@@ -71,13 +71,14 @@ main {
   }
 
   // Adaptacion del background image a mobile
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .banner {
       background-image: url("../assets/img/desksetup-main-mobile.webp");
     }
   }
+
   // Media Query para las cards que funcionan con AOS
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .desktop {
       display: none;
     }
@@ -86,8 +87,8 @@ main {
     }
   }
 
-  // Cuando la pantalla sea de 768px o menor el container del titulo sera de 350px de ancho
-  @media screen and (max-width: 768px) {
+  // Cuando la pantalla sea de 767px o menor el container del titulo sera de 350px de ancho
+  @media screen and (max-width: 767px) {
     .index__tittle {
       width: 350px;
       height: auto;
